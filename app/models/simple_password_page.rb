@@ -1,13 +1,18 @@
 class SimplePasswordPage < Page
   
   description %{
-    A "Simple Password Page" page can be used to 
-        
-    Quote strings with ambiguous meaning in YAML including (not limited) to:
-    "!abc", "foo:bar", "null", "true", "false", "yes", "no", "on", "off"
-    (see http://yaml.org/spec/1.2/#id2588633 and 
-     http://en.wikipedia.org/wiki/YAML#Pitfalls_and_implementation_defects)
+    A "Simple Password Page" page protects contents with HTTP Basic 
+    Authentication. The user name, password, and realm are set up in
+    the "config" page part with the following YAML format:
     
+    user: foo
+    password: secret
+    realm: kingdom
+    
+    You will need to quote strings with ambiguous meaning in YAML including 
+    (not limited) to: "!abc", "foo:bar", "null", "true", "false", "yes", 
+    "no", "on", "off" (see http://yaml.org/spec/1.2/#id2588633 and 
+     http://en.wikipedia.org/wiki/YAML#Pitfalls_and_implementation_defects)
   }
 
   def cache?
