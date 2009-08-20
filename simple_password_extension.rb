@@ -1,4 +1,4 @@
-require_dependency 'application'
+require_dependency 'application_controller'
 require_dependency 'site_controller_ext'
 
 
