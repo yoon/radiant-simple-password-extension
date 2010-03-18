@@ -1,6 +1,6 @@
 require_dependency 'application_controller'
 require_dependency 'site_controller_ext'
-
+require_dependency 'app/models/simple_password_page'
 
 class SimplePasswordExtension < Radiant::Extension
   version "0.1"
